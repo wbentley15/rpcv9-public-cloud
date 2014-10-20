@@ -1,0 +1,7 @@
+---
+
+- name: Build Compute01 Cloud Server
+  command: supernova iad boot --flavor performance1-8 --image e19a734c-c7e6-443a-830c-242209c4d65d --key-name {{ KEY_NAME }} --nic net-id={{ EXTRA_NET_ID }} {{ COMPUTE_NAME1 }}
+
+- name: Build Compute02 Cloud Server
+  command: supernova iad boot --flavor performance1-8 --image e19a734c-c7e6-443a-830c-242209c4d65d --key-name {{ KEY_NAME }} --nic net-id={{ EXTRA_NET_ID }} {{ COMPUTE_NAME2 }}

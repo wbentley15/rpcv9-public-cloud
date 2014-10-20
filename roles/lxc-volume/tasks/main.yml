@@ -1,0 +1,13 @@
+---
+
+- name: Create data physical volume
+  command: pvcreate --metadatasize 2048 /dev/xvde1
+  
+- name: Create data virtual volume
+  command: vgcreate lxc /dev/xvde1
+
+- name: Create LXC physical volume
+  command: pvcreate --metadatasize 2048 /dev/xvdb
+
+- name: Combine data and LXC virtual volumes
+  command: vgextend lxc /dev/xvdb

@@ -1,0 +1,9 @@
+---
+# This playbook deploys base environment for Openstack Icehouse. 
+
+- hosts: localhost
+  roles:
+    - server-create-infra
+    - server-create-compute
+    - server-create-storage
+    - server-create-deploy

@@ -1,0 +1,37 @@
+---
+# This playbook deploys base environment for Openstack Icehouse. 
+
+- hosts: control1 
+  user: root
+  remote_user: root
+  sudo: yes
+  roles:
+    - network-setup
+    
+- hosts: control4 
+  user: root
+  remote_user: root
+  sudo: yes
+  roles:
+    - network-setup
+    
+- hosts: control5 
+  user: root
+  remote_user: root
+  sudo: yes
+  roles:
+    - network-setup
+    
+- hosts: compute1 
+  user: root
+  remote_user: root
+  sudo: yes
+  roles:
+    - network-setup
+    
+- hosts: compute2 
+  user: root
+  remote_user: root
+  sudo: yes
+  roles:
+    - network-setup

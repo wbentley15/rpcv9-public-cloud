@@ -1,7 +1,7 @@
 ---
 
 - name: Build Infra01 Cloud Server
-  command: supernova iad boot --flavor performance1-8 --image e19a734c-c7e6-443a-830c-242209c4d65d --key-name {{ KEY_NAME }} --nic net-id={{ EXTRA_NET_ID }} {{ INFRA_NAME1 }}
-  
+  command: supernova iad boot --flavor general1-8 --image e19a734c-c7e6-443a-830c-242209c4d65d --key-name rpcv9-wb --nic net-id=72fcc34b-827a-4e3b-8ae7-c8cf9fa55045 021579-infra01
+
 - name: Build Logger01 Cloud Server
-  command: supernova iad boot --flavor performance1-4 --image e19a734c-c7e6-443a-830c-242209c4d65d --key-name {{ KEY_NAME }} --nic net-id={{ EXTRA_NET_ID }} {{ LOGGER_NAME }}
+  command: supernova iad boot --flavor general1-8 --image e19a734c-c7e6-443a-830c-242209c4d65d --key-name rpcv9-wb --nic net-id=72fcc34b-827a-4e3b-8ae7-c8cf9fa55045 021579-logger01

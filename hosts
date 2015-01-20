@@ -22,17 +22,26 @@ localhost ansible_connection=local
 [compute2]
 021579-compute02
 
+[compute3]
+021579-compute03
+
 [infra_nodes]
 021579-infra01
 021579-logger01
 021579-storage01
+021579-storage02
 
 [compute_nodes]
 021579-compute01
 021579-compute02
+021579-compute03
 
 [storage]
 021579-storage01
+021579-storage02
+
+[storage2]
+021579-storage02
 
 [lxc_nodes]
 021579-infra01

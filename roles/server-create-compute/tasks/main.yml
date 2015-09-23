@@ -1,10 +1,10 @@
 ---
 
 - name: Build Compute01 Cloud Server
-  command: supernova iad boot --flavor general1-8 --image e19a734c-c7e6-443a-830c-242209c4d65d --key-name rpcv9-wb --nic net-id=72fcc34b-827a-4e3b-8ae7-c8cf9fa55045 021579-compute01
+  command: supernova iad boot --flavor 7 --image e19a734c-c7e6-443a-830c-242209c4d65d --key-name rpcv9-wb --nic net-id=72fcc34b-827a-4e3b-8ae7-c8cf9fa55045 021579-compute01
 
 - name: Build Compute02 Cloud Server
-  command: supernova iad boot --flavor general1-8 --image e19a734c-c7e6-443a-830c-242209c4d65d --key-name rpcv9-wb --nic net-id=72fcc34b-827a-4e3b-8ae7-c8cf9fa55045 021579-compute02
+  command: supernova iad boot --flavor 7 --image e19a734c-c7e6-443a-830c-242209c4d65d --key-name rpcv9-wb --nic net-id=72fcc34b-827a-4e3b-8ae7-c8cf9fa55045 021579-compute02
   
 - name: Build Compute03 Cloud Server
-  command: supernova iad boot --flavor general1-8 --image e19a734c-c7e6-443a-830c-242209c4d65d --key-name rpcv9-wb --nic net-id=72fcc34b-827a-4e3b-8ae7-c8cf9fa55045 021579-compute03
+  command: supernova iad boot --flavor 7 --image e19a734c-c7e6-443a-830c-242209c4d65d --key-name rpcv9-wb --nic net-id=72fcc34b-827a-4e3b-8ae7-c8cf9fa55045 021579-compute03
